@@ -39,9 +39,7 @@ DataElement::DataElement() :
 {
 }
 
-DataElement::~DataElement()
-{
-}
+DataElement::~DataElement() = default;
 
 SingleDataElement::SingleDataElement()
 {
@@ -54,9 +52,7 @@ SingleDataElement::SingleDataElement(const std::string theString) :
 	mIsList = false;
 }
 
-SingleDataElement::~SingleDataElement()
-{
-}
+SingleDataElement::~SingleDataElement() = default;
 
 DataElement* SingleDataElement::Duplicate()
 {

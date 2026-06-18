@@ -69,7 +69,7 @@ public: // @Patoke todo: revert to protected
 		XMLParamMap mXMLAttributes;
 		bool mFromProgram;
 
-		virtual ~BaseRes() {}
+		virtual ~BaseRes() = default;
 		virtual void DeleteResource() { }
 	};
 

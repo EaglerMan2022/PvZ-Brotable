@@ -31,7 +31,7 @@ class DummyMusicInterface : public MusicInterface
 {
 public:
 	DummyMusicInterface() {}
-	~DummyMusicInterface() override {};
+	~DummyMusicInterface() override = default;
 
 	bool					LoadMusic(int, const std::string&) override{return false;}
 	void 					PlayMusic(int, int, bool) override{}

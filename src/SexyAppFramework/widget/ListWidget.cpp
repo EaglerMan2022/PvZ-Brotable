@@ -61,9 +61,7 @@ ListWidget::ListWidget(int theId, _Font *theFont, ListListener *theListListener)
 	mDoFingerWhenHilited = true;
 }
 	
-ListWidget::~ListWidget() 
-{
-}
+ListWidget::~ListWidget() = default;
 
 void ListWidget::RemovedFromManager(WidgetManager *theManager)
 {
